@@ -5,43 +5,41 @@ body {
   padding: 0;
   font-size: 16px; /* Tamaño predeterminado */
 }
-
-header {
+body header {
   background-color: #b51a1a;
   padding: 20px;
   text-align: center;
 }
-header h1 {
+body header h1 {
   font-style: oblique;
   font-size: 50px;
   color: white;
   text-shadow: 3px 3px black;
 }
-header nav ul {
+body header nav ul {
   list-style: none;
   margin: 10;
   padding: 0;
   display: flex;
   justify-content: space-between;
 }
-header nav ul li {
+body header nav ul li {
   list-style: none;
   text-align: start;
   color: white;
   font-size: 25px;
   text-shadow: 3px 3px black;
 }
-header nav ul li a {
+body header nav ul li a {
   color: #fff;
   text-decoration: none;
 }
-
-section {
+body section {
   padding: 10px;
   box-shadow: 20px;
   text-align: center;
 }
-section img {
+body section img {
   width: 50%;
   height: 50%;
   object-fit: cover;
@@ -49,19 +47,18 @@ section img {
   box-shadow: 0 0 50px;
   border-radius: 70px 0 70px 0;
 }
-section p {
+body section p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 20px;
   font-style: normal;
   text-align: center;
   font-size: 200%;
 }
-section h3 {
+body section h3 {
   font-size: 40px;
   background-color: #ce8080;
 }
-
-.logo {
+body .logo {
   position: fixed;
   right: 0;
   bottom: 60px;
@@ -69,8 +66,7 @@ section h3 {
   height: 50px;
   border-radius: 25px;
 }
-
-footer {
+body footer {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -78,84 +74,80 @@ footer {
   background-color: #b51a1a;
   color: #fff;
 }
-footer img {
+body footer img {
   width: 50px;
   height: 50px;
   border-radius: 25px;
 }
-footer div {
+body footer div {
   text-align: center;
 }
-footer p {
+body footer p {
   text-align: center;
 }
-footer .div-footer {
+body footer .div-footer {
   display: flex;
   justify-content: center;
 }
-
-.españa {
+body .españa {
   background-color: rgb(231, 67, 67);
   border: solid 2px;
   border-radius: 35px;
   padding: 10px;
   margin: 10px;
 }
-
-.grid {
+body .grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.mobile {
+body .mobile {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
 }
-
 @media (max-width: 480px) {
-  .mercados img {
+  body .mercados img {
     width: 150px;
     height: 150px;
   }
-  .mobile {
+  body .mobile {
     text-align: center;
     margin: 10px;
     gap: 10px;
   }
-  .footer-one {
+  body .footer-one {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 0px;
   }
-  .item-mexico img {
+  body .item-mexico img {
     width: 80%;
   }
-  .item-mexico {
+  body .item-mexico {
     text-align: center;
   }
-  footer {
+  body footer {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  .grid {
+  body .grid {
     margin: 20px;
   }
-  .españa {
+  body .españa {
     margin: 20px;
   }
-  header nav ul li {
+  body header nav ul li {
     padding: 2px;
   }
 }
 @media (min-width: 768px) {
-  .mobile {
+  body .mobile {
     margin: 20px;
   }
-  .mercados {
+  body .mercados {
     display: flex;
     justify-content: center;
     align-items: center; /* Centra verticalmente */
@@ -163,7 +155,7 @@ footer .div-footer {
     gap: 20px;
     margin: 30px auto; /* Centra el contenedor en la página */
   }
-  .mercados img {
+  body .mercados img {
     width: 150px; /* Ajusta este valor al ancho que necesites */
     height: 150px; /* Ajusta este valor a la altura que prefieras */
     object-fit: cover; /* Asegura que la imagen se recorte para llenar el espacio */
@@ -171,19 +163,19 @@ footer .div-footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra para efecto elegante */
     margin: 5px; /* Espaciado opcional entre las imágenes */
   }
-  main div img {
+  body main div img {
     border-radius: 20px;
   }
-  .mexico-padre {
+  body .mexico-padre {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 40px;
   }
-  h4 {
+  body h4 {
     text-align: center;
   }
-  .item-mexico img {
+  body .item-mexico img {
     max-width: 100%;
     height: auto;
   }
