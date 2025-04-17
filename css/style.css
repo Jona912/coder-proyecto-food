@@ -5,41 +5,42 @@ body {
   padding: 0;
   font-size: 16px; /* Tamaño predeterminado */
 }
-body header {
+
+header {
   background-color: #b51a1a;
   padding: 20px;
   text-align: center;
 }
-body header h1 {
+header h1 {
   font-style: oblique;
   font-size: 50px;
   color: white;
   text-shadow: 3px 3px black;
 }
-body header nav ul {
+header h1 nav ul {
   list-style: none;
   margin: 10;
   padding: 0;
   display: flex;
   justify-content: space-between;
 }
-body header nav ul li {
+header h1 nav ul li {
   list-style: none;
   text-align: start;
   color: white;
   font-size: 25px;
   text-shadow: 3px 3px black;
 }
-body header nav ul li a {
+header h1 nav ul li a {
   color: #fff;
   text-decoration: none;
 }
-body section {
+header section {
   padding: 10px;
   box-shadow: 20px;
   text-align: center;
 }
-body section img {
+header section img {
   width: 50%;
   height: 50%;
   object-fit: cover;
@@ -47,18 +48,18 @@ body section img {
   box-shadow: 0 0 50px;
   border-radius: 70px 0 70px 0;
 }
-body section p {
+header section p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 20px;
   font-style: normal;
   text-align: center;
   font-size: 200%;
 }
-body section h3 {
+header section h3 {
   font-size: 40px;
   background-color: #ce8080;
 }
-body .logo {
+header .logo {
   position: fixed;
   right: 0;
   bottom: 60px;
@@ -66,7 +67,7 @@ body .logo {
   height: 50px;
   border-radius: 25px;
 }
-body footer {
+header footer {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -74,80 +75,80 @@ body footer {
   background-color: #b51a1a;
   color: #fff;
 }
-body footer img {
+header footer img {
   width: 50px;
   height: 50px;
   border-radius: 25px;
 }
-body footer div {
+header footer div {
   text-align: center;
 }
-body footer p {
+header footer p {
   text-align: center;
 }
-body footer .div-footer {
+header footer .div-footer {
   display: flex;
   justify-content: center;
 }
-body .españa {
+header .españa {
   background-color: rgb(231, 67, 67);
   border: solid 2px;
   border-radius: 35px;
   padding: 10px;
   margin: 10px;
 }
-body .grid {
+header .grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-body .mobile {
+header .mobile {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
 }
 @media (max-width: 480px) {
-  body .mercados img {
+  header .mercados img {
     width: 150px;
     height: 150px;
   }
-  body .mobile {
+  header .mobile {
     text-align: center;
     margin: 10px;
     gap: 10px;
   }
-  body .footer-one {
+  header .footer-one {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 0px;
   }
-  body .item-mexico img {
+  header .item-mexico img {
     width: 80%;
   }
-  body .item-mexico {
+  header .item-mexico {
     text-align: center;
   }
-  body footer {
+  header footer {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  body .grid {
+  header .grid {
     margin: 20px;
   }
-  body .españa {
+  header .españa {
     margin: 20px;
   }
-  body header nav ul li {
+  header header nav ul li {
     padding: 2px;
   }
 }
 @media (min-width: 768px) {
-  body .mobile {
+  header .mobile {
     margin: 20px;
   }
-  body .mercados {
+  header .mercados {
     display: flex;
     justify-content: center;
     align-items: center; /* Centra verticalmente */
@@ -155,7 +156,7 @@ body .mobile {
     gap: 20px;
     margin: 30px auto; /* Centra el contenedor en la página */
   }
-  body .mercados img {
+  header .mercados img {
     width: 150px; /* Ajusta este valor al ancho que necesites */
     height: 150px; /* Ajusta este valor a la altura que prefieras */
     object-fit: cover; /* Asegura que la imagen se recorte para llenar el espacio */
@@ -163,19 +164,19 @@ body .mobile {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra para efecto elegante */
     margin: 5px; /* Espaciado opcional entre las imágenes */
   }
-  body main div img {
+  header main div img {
     border-radius: 20px;
   }
-  body .mexico-padre {
+  header .mexico-padre {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 40px;
   }
-  body h4 {
+  header h4 {
     text-align: center;
   }
-  body .item-mexico img {
+  header .item-mexico img {
     max-width: 100%;
     height: auto;
   }
