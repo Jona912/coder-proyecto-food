@@ -25,14 +25,17 @@ body {
 
 header {
     background-color: $color-principal;
-
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    position: fixed;
+    top: 0;
+    margin-bottom: 30px;
+    width: 100%;
 
 
     h1 {
         font-style: oblique;
-        font-size: 50px;
+        font-size: 30px;
         color: white;
         text-shadow: 3px 3px black;
 
@@ -80,16 +83,15 @@ header {
     
 
     section {
-
-        padding: 10px;
+        margin-top: 100px;
         box-shadow: 20px;
         text-align: center;
-
+        display: flex;
+        gap: 20px;
 
         a {
             img {
-                width: 50%;
-                height: 50%;
+                width: 200px;
                 object-fit: cover;
                 border: solid 2px;
                 box-shadow: 0 0 50px;
