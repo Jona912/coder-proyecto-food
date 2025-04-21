@@ -51,7 +51,8 @@ section {
 section a img {
   width: 50%;
   height: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: solid 2px;
   box-shadow: 0 0 50px;
   border-radius: 70px 0 70px 0;
@@ -178,7 +179,8 @@ footer .div-footer {
     /* Ajusta este valor al ancho que necesites */
     height: 150px;
     /* Ajusta este valor a la altura que prefieras */
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     /* Asegura que la imagen se recorte para llenar el espacio */
     border-radius: 8px;
     /* Opcional: bordes redondeados */
@@ -203,6 +205,4 @@ footer .div-footer {
     max-width: 100%;
     height: auto;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
