@@ -1,4 +1,8 @@
 @charset "UTF-8";
+ul .listado {
+  background-color: red;
+}
+
 body {
   background-color: whitesmoke;
   margin: 0;
@@ -48,24 +52,23 @@ header nav ul li a:hover {
 }
 
 section {
-  margin-top: 100px;
-  box-shadow: 20px;
   text-align: center;
-  display: flex;
-  gap: 20px;
-}
-section a img {
-  width: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: solid 2px;
-  box-shadow: 0 0 50px;
-  border-radius: 70px 0 70px 0;
 }
 section h3 {
   background-color: #b51a1a;
   font-size: 40px;
   color: white;
+}
+section a img {
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid blue;
+  box-shadow: 0 0 50px;
+  border-radius: 70px 0 70px 0;
+}
+section a img:hover {
+  transform: scale(1.05);
 }
 section p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
