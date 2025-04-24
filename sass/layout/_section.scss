@@ -1,0 +1,178 @@
+@use "../base/variables";
+@use "../mixins/media";
+
+section {
+  text-align: center;
+  padding: 20px;
+
+  h3 {
+    background-color: variables.$color-principal;
+    font-size: 40px;
+    margin-top: 180px;
+    color: variables.$color-text;
+  }
+
+  .section-content {
+
+
+    img {
+      width: 300px;
+      object-fit: cover;
+      border: 2px solid variables.$color-principal;
+      border-radius: 70px 0 70px 0;
+      box-shadow: 0 0 80px variables.$color-boxShadow;
+
+      
+    }
+
+    p {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 20px;
+      width: 50%;
+      color: variables.$color-text;
+      margin: 50px auto;
+    }
+
+    
+  }
+  .cta-button {
+    padding: 20px;
+    background-color: variables.$color-principal;
+    color: variables.$color-text;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+  }
+}
+
+
+.gallery-container {
+ display: flex;
+ margin-top: 200px;
+}
+
+.listado {
+  margin-top: 150px;
+  text-align: center;
+  list-style-type: none;
+
+    li {
+      color: variables.$color-text;
+      font-size: 20px;
+      margin-top: 20px;
+      font-family: monospace;
+    }
+  
+}
+
+.container {
+  margin-top: 200px;
+  color: variables.$color-text;
+  font-size: 20px;
+}
+
+// Estilos responsivos
+@include media.respond-to(mobile) {
+
+  .mercados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  
+    img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+
+
+section h3 {
+  margin-top: 200px;
+}
+
+
+
+  section p {
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+@include media.respond-to(tablet) {
+
+  .section-content {
+    display:flex;
+    flex-direction: row;
+  }
+
+  .mercados {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+
+}
+
+
+@include media.respond-to(desktop) {
+  section {
+    h3 {
+      font-size: 50px;
+      margin-top: 220px;
+    }
+
+    p {
+      font-size: 20px;
+      
+    }
+
+    a img {
+      width: 250px;
+      border-radius: 80px 0 80px 0;
+      
+      box-shadow: 0 0 80px variables.$color-boxShadow;
+    }
+  }
+
+  .section-content {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+   
+}
+
+
+@media (max-width: 767px) {
+  .gallery-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .mercados img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+  }
+
+
+}
+

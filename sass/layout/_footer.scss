@@ -1,0 +1,32 @@
+@use "../base/variables";
+@use "../mixins/media";
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: variables.$color-principal;
+  color: #fff;
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  .footer-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  div, p {
+    text-align: center;
+  }
+
+  @include media.respond-to(mobile) {
+    flex-direction: column;
+    text-align: center;
+  }
+}

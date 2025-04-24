@@ -1,0 +1,236 @@
+header {
+  background-color: #db3434;
+  padding: 0 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  margin-bottom: 20px;
+  width: 100%;
+}
+header h1 {
+  font-style: oblique;
+  font-size: 30px;
+  color: white;
+  text-shadow: 3px 3px black;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  gap: 20px;
+}
+header nav ul li {
+  color: white;
+  font-size: 25px;
+  text-shadow: 2px 2px black;
+}
+header nav ul li a {
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  background-color: rgb(255, 109, 109);
+  border-radius: 20px;
+}
+@media (min-width: 576px) {
+  header nav ul li {
+    padding: 2px;
+  }
+  header nav ul {
+    gap: 0px;
+  }
+  header nav ul li {
+    font-size: 10px;
+  }
+}
+
+body {
+  background-color: rgb(53, 52, 52);
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #db3434;
+  color: #fff;
+}
+footer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+footer .footer-content {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+footer div, footer p {
+  text-align: center;
+}
+@media (min-width: 576px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.grid .item img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  text-align: center;
+  padding: 20px;
+}
+section h3 {
+  background-color: #db3434;
+  font-size: 40px;
+  margin-top: 180px;
+  color: #fff;
+}
+section .section-content img {
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #db3434;
+  border-radius: 70px 0 70px 0;
+  box-shadow: 0 0 80px rgba(255, 0, 0, 0.3);
+}
+section .section-content p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  width: 50%;
+  color: #fff;
+  margin: 50px auto;
+}
+section .cta-button {
+  padding: 20px;
+  background-color: #db3434;
+  color: #fff;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  margin-top: 200px;
+}
+
+.listado {
+  margin-top: 150px;
+  text-align: center;
+  list-style-type: none;
+}
+.listado li {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: monospace;
+}
+
+.container {
+  margin-top: 200px;
+  color: #fff;
+  font-size: 20px;
+}
+
+@media (min-width: 576px) {
+  .mercados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .mercados img {
+    width: 120px;
+    height: 120px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  section h3 {
+    margin-top: 200px;
+  }
+  section p {
+    font-size: 20px;
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  .section-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .mercados {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .mercados img {
+    width: 200px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  section h3 {
+    font-size: 50px;
+    margin-top: 220px;
+  }
+  section p {
+    font-size: 20px;
+  }
+  section a img {
+    width: 250px;
+    border-radius: 80px 0 80px 0;
+    box-shadow: 0 0 80px rgba(255, 0, 0, 0.3);
+  }
+  .section-content {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .gallery-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .mercados img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+  }
+}
+.logo {
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}/*# sourceMappingURL=style.css.map */

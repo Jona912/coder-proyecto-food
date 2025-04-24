@@ -1,0 +1,22 @@
+@use "../base/variables";
+@use "../mixins/media";
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+
+  .item {
+    img {
+      width: 80%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+
+
+

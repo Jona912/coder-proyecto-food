@@ -1,0 +1,58 @@
+@use "../base/variables";
+@use "../mixins/media";
+
+header {
+  background-color: variables.$color-principal;
+  padding: 0 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  margin-bottom: 20px;
+  width: 100%;
+
+  h1 {
+    font-style: oblique;
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px black;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    gap: 20px;
+
+    li {
+      color: white;
+      font-size: 25px;
+      text-shadow: 2px 2px black;
+
+      a {
+        font-size: 20px;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+
+        &:hover {
+          background-color: rgb(255, 109, 109);
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+
+  @include media.respond-to(mobile) {
+    nav ul li {
+      padding: 2px;
+    }
+
+    nav ul {
+      gap: 0px;
+      li {
+        font-size: 10px;
+      }
+    }
+  }
+}
